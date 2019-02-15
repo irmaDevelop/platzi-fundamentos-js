@@ -21,6 +21,22 @@ function imprimirNombreYEdad(persona){
     console.log(`Hola me llamo ${nombre} y mi edad es ${edad}`)
 }
 
+//funcion actualiza el objeto definido de manera global
+function cumpleanos(persona){
+    persona.edad += 1
+
+}
+
+//funcion puede devolver un nuevo objeto
+function cumpleanos1(persona){
+    return {
+        //se pueden agregar campos tambien.
+        ...persona, //nuevo objeto persona mas vieja
+        edad: persona.edad + 1
+    }
+}
+
+
 imprimirNombreEnMayusculas(sacha)
 imprimirNombreEnMayusculas(dario) 
 //imprimirNombreEnMayusculas({nombre: 'Pepito'})

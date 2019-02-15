@@ -1,0 +1,109 @@
+
+<html lang="es">
+    <head>
+        <style>
+
+            html{      
+    width:100%;
+    height:100%;       
+}
+ a{
+	color: white;
+	background: #00bdff;
+	padding: 20px 10px 20px 10px;
+	border:2px solid white;
+	text-decoration: none;
+ }
+body{
+    color:white;
+    font-family: Open Sans;
+    margin:0;
+    width:100%;
+    height:100%;
+    background-color:#00bdff;
+
+}
+.efecto{
+    overflow:hidden;
+    position:relative;
+    font-size:3em;
+    width:100%;
+    height:0;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition:all 500ms ease-out;
+    transition: all 500ms ease-out;
+
+}
+#contenedor{
+    position:absolute;
+    width:100%;
+    height:100%;
+    font-size:3em;
+    overflow:hidden;
+}
+ 
+#contenedor1{
+    background-color:red;
+  
+}
+ #contenedor2{
+    background-color:green;
+    color:rgb(49, 40, 40);  
+}
+#contenedor3{
+    background-color:orange;
+    color:#00bdff;  
+}
+.efecto:target{
+    height:50%;
+}
+
+
+#desarrollofrontend a{
+	padding: 0px;
+	border:none;
+
+}
+#desarrollofrontend{
+	padding: 10px 0px 10px 0px;
+	background: #00bdff;
+	color: white;
+	width: 100%;
+	bottom: 0px;
+	position: fixed;
+	padding-left: 15px;
+}
+        </style>
+
+    </head>
+<meta charset="UTF-8"/>
+<body>
+
+
+    <div id="contenedor">
+        <h2>Efecto slide scroll</h2>CSS3
+        <h6> usando la pseudo-clase :target  para acceder mediante enlaces.</h6>
+        <a href="#contenedor1">siguiente</a>
+    </div>
+
+    <div id="contenedor1" class="efecto">
+        <h2>1º contenedor</h2>
+        <a href="#contenedor2">siguiente</a>       
+    </div>
+
+    <div id="contenedor2" class="efecto">
+        <h2>2º contenedor</h2>
+        <a href="#contenedor3">siguiente</a>       
+    </div>
+
+    <div id="contenedor3" class="efecto">
+        <h2>3º contenedor</h2>
+        <a href="#contenedor">siguiente</a>       
+    </div>
+
+    <div id="desarrollofrontend">
+         <a href="http://www.desarrollofrontend.com" target="blank">desarrollofrontend.com</a>
+             
+    </div>
+</body>
+</html>
