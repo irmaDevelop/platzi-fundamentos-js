@@ -29,3 +29,9 @@ var paula = {
     apellido: 'Barros',
     altura: 1.76
 }
+
+var personas = [sacha, alan, martin, dario, vicky, paula]
+
+for (var i=0; i< personas.length; i++){
+    console.log(`${personas[i].nombre} mide ${personas[i].altura} mts`)
+}
